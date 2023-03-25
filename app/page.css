@@ -59,5 +59,27 @@
   padding: 70px 0;
 }
 .navy{
-  height: 70px;
+  height: 150px;
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill>svg{
+  width: 100px;
+  
+   /* width: 100%; */
+}
+.skill > svg > path{
+  fill: #1e2039;
+}
+aside > svg > path{
+  fill: #1e2039;
+}
+aside{
+  width: 15%;
+  height: 150px;
 }
