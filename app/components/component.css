@@ -1,0 +1,17 @@
+.social-media> a > svg{
+  width: 25px;
+  height: 25px;
+}
+.social-media > a > svg > path{
+  fill:#cbd5e1;
+  transition: 0.5s ease-in-out;
+}
+.social-media > a > svg:hover path{
+  fill:#fff
+}
+.nav-link{
+  transition: 0.5s ease-in-out
+}
+.nav-link:hover{
+  color: #fff;
+}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+.color-navy{
+  color: #1e2039;
+}
+.bg-navy{
+  background-color: #1e2039;
+}
+.container{
+  margin: 0 auto;
+}
+.bg-grey{
+  background-color: #cbd5e1;
+}

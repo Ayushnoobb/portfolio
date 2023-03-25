@@ -1,0 +1,38 @@
+.image{
+  position: absolute;
+	top:0%;
+	left:50%;
+	transform:translate(-50%,0%);
+	background-size:350px 350px;
+	border-radius: 80% 20% 32% 68% / 58% 22% 78% 42% ;
+	height:350px;
+	width:350px;
+  background-image: url("./img/ayushb.jpg");
+}
+.image-holder{
+  min-height: 350px;
+  margin: 20px;
+}
+.wave{
+  animation: wave;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: fit-content;
+  display: inline-block;
+  transition: 4s;
+}
+@keyframes wave {
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  100%{
+
+  }
+}
