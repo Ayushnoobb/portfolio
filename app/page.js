@@ -9,9 +9,10 @@ const marker = Permanent_Marker({ subsets: ["latin"], weight: "400" });
 export default function Home() {
   return (
     <>
-      <section className="description bg-grey">
+      <section className="description bg-grey relative">
+        <div className="top bg-navy"></div>
         <div className="container">
-          <div className="flex justify-end  py-16 ">
+          <div className="flex justify-end  py-16">
             <div className="image-holder relative w-2/4">
               <div className="image absolute"></div>
             </div>
@@ -53,7 +54,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bottom bg-navy"></div>
       </section>
+        <div className="navy bg-navy"></div>
     </>
   );
 }

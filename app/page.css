@@ -36,3 +36,28 @@
 
   }
 }
+.top{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 50%;
+  height: 70px;
+  margin-top: -5px;
+  clip-path: polygon(0 0, 85% 0%, 77% 100%, 0% 100%);
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 50%;
+  height: 70px;
+  margin-bottom: -5px;
+  clip-path: polygon(0 0, 85% 0%, 77% 100%, 0% 100%); 
+  transform: rotate(180deg);
+}
+.description > .container{
+  padding: 70px 0;
+}
+.navy{
+  height: 70px;
+}

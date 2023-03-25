@@ -20,9 +20,9 @@ export default function Navbar() {
           <li className="nav-link">
             <Link href={"/about"}>About Me</Link>
           </li>
-          {/* <li className="nav-link">
+          <li className="nav-link">
             <Link href={"/blog"}>Blogs</Link>
-          </li> */}
+          </li>
           <li className="nav-link">
             <Link href={"/contact"}>Contact</Link>
           </li>
