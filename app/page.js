@@ -36,7 +36,7 @@ export default function Home() {
                 functional.
               </p> 
               <p className="font-medium text-sm py-2"> 
-                I have a deep understanding of React's core
+                I have a deep understanding of React core
                 concepts, such as component lifecycle, state and props
                 management, and the virtual DOM, and i can leverage them to
                 build performant and scalable applications. Your experience with
