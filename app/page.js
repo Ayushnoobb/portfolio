@@ -195,7 +195,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl mt-2">Dynamic</h3>
               <p className="mt-2 text-sm text-center font-medium">
-                Websites don't have to be static, I love making pages come to life.
+                Websites dont have to be static, I love making pages come to life.
               </p>
             </li>
             <li className="service flex flex-col">
