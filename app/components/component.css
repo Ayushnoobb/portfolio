@@ -15,3 +15,25 @@
 .nav-link:hover{
   color: #fff;
 }
+nav{
+  transition: all 1.5s linear ;
+}
+.fixed{
+  width: 100%;
+  left: 0;
+  top: 0;
+  animation: slow;
+  animation-duration: 0.5s;
+  transition: 0.5s;
+  animation-timing-function: linear;
+  z-index: 4;
+  position: fixed;
+}
+@keyframes slow {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
