@@ -13,6 +13,16 @@
   min-height: 350px;
   margin: 20px;
 }
+@media(max-width:768px){
+  .image{
+    height: 250px;
+    width: 250px;
+    background-size: 250px 250px;
+  }
+  .image-holder{
+    height: 250px;
+  }
+}
 .wave {
   animation: wave;
   animation-duration: 2s;

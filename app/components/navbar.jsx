@@ -13,7 +13,7 @@ export default function Navbar() {
             Portfolio
           </span>
         </h1>
-        <ul className="flex gap-8 text-base font-bold text-slate-300">
+        <ul className=" hidden sm-flex gap-8 text-base font-bold text-slate-300">
           <li className="nav-link">
             <Link href={"/"}>Home</Link>
           </li>
