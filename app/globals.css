@@ -18,6 +18,9 @@
   margin: 0 auto;
   overflow-x: hidden;
 }
+nav > .container{
+  overflow: unset;
+}
 @media (max-width:768px){
   .container{
     padding:0 10px !important ;
