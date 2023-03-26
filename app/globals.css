@@ -17,6 +17,11 @@
 .container{
   margin: 0 auto;
 }
+@media (max-width:768px){
+  .container{
+    padding:0 10px !important ;
+  }
+}
 .bg-grey{
   background-color: #cbd5e1;
 }

@@ -1,85 +1,118 @@
-.image{
+.image {
   position: absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	background-size:400px 400px;
-	border-radius: 80% 20% 32% 68% / 58% 22% 78% 42% ;
-	height:400px;
-	width:400px;
-  background-image: url("./img/ayushb.jpg");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 400px 400px;
+  border-radius: 80% 20% 32% 68% / 58% 22% 78% 42%;
+  height: 400px;
+  width: 400px;
+  background-image: url("../public/img/ayushb.jpg");
 }
-.image-holder{
+.image-holder {
   min-height: 350px;
   margin: 20px;
 }
-.wave{
+.wave {
   animation: wave;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   width: fit-content;
   display: inline-block;
-  transition: 4s;
+  transition: 2s;
 }
 @keyframes wave {
-  0%{
+  0% {
     transform: rotate(0);
   }
-  25%{
+  25% {
     transform: rotate(45deg);
   }
-  50%{
+  50% {
     transform: rotate(0);
   }
-  100%{
-
+  100% {
   }
 }
-.top{
+.top {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 50%;
   height: 70px;
   margin-top: -5px;
   clip-path: polygon(0 0, 85% 0%, 77% 100%, 0% 100%);
 }
-.bottom{
+.bottom {
   position: absolute;
   bottom: 0;
-  right:0;
+  right: 0;
   width: 50%;
   height: 70px;
   margin-bottom: -5px;
-  clip-path: polygon(0 0, 85% 0%, 77% 100%, 0% 100%); 
+  clip-path: polygon(0 0, 85% 0%, 77% 100%, 0% 100%);
   transform: rotate(180deg);
 }
-.description > .container{
+.description > .container {
   padding: 70px 0;
 }
-.navy{
+.navy {
   height: 150px;
 }
 
-.skill{
+.skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.skill>svg{
+.skill > svg {
   width: 100px;
-  
-   /* width: 100%; */
+
+  /* width: 100%; */
 }
-.skill > svg > path{
+.skill > svg > path {
   fill: #1e2039;
 }
-aside > svg > path{
+aside > svg > path {
   fill: #1e2039;
 }
-aside{
+aside {
   width: 15%;
   height: 150px;
+}
+.rotate > svg {
+  animation: rotate;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.triangle-top {
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  width: 100%;
+  position: absolute;
+  margin-top: -1px;
+  height: 50px;
+}
+.triangle-bottom{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1px;
+  height: 280px;
+}
+@media(max-width:768px){
+  .triangle-bottom{
+    height: 150px;
+  }
 }
