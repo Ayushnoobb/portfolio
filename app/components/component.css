@@ -1,3 +1,4 @@
+/* navbar */
 .social-media> a > svg{
   width: 25px;
   height: 25px;
@@ -15,25 +16,24 @@
 .nav-link:hover{
   color: #fff;
 }
-nav{
-  transition: all 1.5s linear ;
-}
-.fixed{
+.isfixed{
   width: 100%;
   left: 0;
   top: 0;
   animation: slow;
   animation-duration: 0.5s;
-  transition: 0.5s;
   animation-timing-function: linear;
   z-index: 4;
   position: fixed;
+  filter: blur(0.9);
+  opacity: 0.95;
 }
+
 @keyframes slow {
   0%{
     opacity: 0;
   }
   100%{
-    opacity: 1;
+    opacity: 0.95;
   }
 }

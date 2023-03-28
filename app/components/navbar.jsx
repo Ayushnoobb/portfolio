@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link";
 import React,{useEffect} from "react";
+
 import "./component.css"
+
 import { Permanent_Marker } from 'next/font/google'
 const marker = Permanent_Marker({ subsets: ['latin'] , weight:"400"})
 
@@ -9,15 +11,15 @@ export default function Navbar() {
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
       if(scrollY > 200){
-        document.querySelector(".nav").classList.add("fixed")
+        document.querySelector(".nav").classList.add("isfixed")
       }else{
-        document.querySelector(".nav").classList.remove("fixed")
+        document.querySelector(".nav").classList.remove("isfixed")
       }
     })
   })
   return (
-    <nav className="nav py-6 px-8 bg-navy" id="nav">
-      <div className="flex justify-evenly container my-0 mx-auto text-slate-300 items-center">
+    <nav className="nav py-6 px-8 bg-navy isfixed" id="nav">
+      <div className="flex justify-between container my-0 mx-auto text-slate-300 items-center">
         <h1 className="text-2xl font-bold">
           <span className={marker.className}>
             Portfolio
