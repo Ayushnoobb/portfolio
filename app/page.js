@@ -270,11 +270,11 @@ export default async function Home() {
           <h2 className="section-blog text-6xl text-center py-16">
             <span className={marker.className}>Blogs</span>
           </h2>
-          <div className="section-blogs mx-auto max-w-3xl p-8 grow">
+          <div className="section-blogs mx-auto max-w-3xl p-8 grow ">
             {toShowBlogs.map((blog) => {
               return (
-                <Link href={`/blog/${blog.id}`} key={blog.id} className="section-blogs-blog px-4 hover:shadow-md ">
-                  <div className="mb-8 border-dotted border-b pb-8 border-gray-300">
+                <Link href={`/blog/${blog.id}`} key={blog.id} className="pt-4 hover:shadow  blog ">
+                  <div className="mb-8 border-dotted border-b pb-8 border-gray-300 px-4">
                     <h2 className="capitalize">
                       <span className="block">{blog.title}</span>
                     </h2>

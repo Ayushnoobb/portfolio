@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
+import "./blog.css"
 
 
 export default async function Blog() {
@@ -8,12 +9,12 @@ export default async function Blog() {
   const res = await data.json()
   return (
     <>
-      <div className="container mx-auto max-w-3xl p-8 grow">
+      <div className="container mx-auto max-w-3xl p-8 grow ">
       {
         res.map((post)=>{
           return (
-            <Link href={`/blog/${post.id}`} key={post.id}>
-              <div className="mb-8 border-dotted border-b pb-8 border-gray-300">
+            <Link href={`/blog/${post.id}`} key={post.id} className=" pt-4 hover:shadow  blog odd:bg-gray-100 even:bg-slate-50">
+              <div className="mb-8 border-dotted border-b pb-8 px-4 border-gray-300">
                 <h2 className='text-slate-700 font-bold underline text-lg'>
                   <span className="block capitalize">{post.title}</span>
                 </h2>
