@@ -18,7 +18,7 @@ export default function Navbar() {
     })
   })
   return (
-    <nav className="nav py-6 px-8 bg-navy isfixed" id="nav">
+    <nav className="nav py-6 px-8 bg-navy" id="nav">
       <div className="flex justify-between container my-0 mx-auto text-slate-300 items-center">
         <h1 className="text-2xl font-bold">
           <span className={marker.className}>

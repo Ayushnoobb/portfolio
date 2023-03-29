@@ -31,6 +31,7 @@
   width: fit-content;
   display: inline-block;
   transition: 2s;
+  transform-origin: bottom right;
 }
 @keyframes wave {
   0% {

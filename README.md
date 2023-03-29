@@ -8,6 +8,8 @@ The thought of portfolio is just a medium to showcase what I learned.
 This project includes utility css i.e Tailwind and A fullstack framework Next.JS
 For the blog storage, Moongose is used for schema of Mongodb.
 
+This project is written in plain JS.
+
 
 ## Getting Started
 
