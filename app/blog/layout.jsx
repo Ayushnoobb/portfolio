@@ -17,7 +17,7 @@ export default function BlogLayout({ children }) {
             <Image
               alt="author"
               className="lg:w-1/4 w-full lg:h-auto h-54 object-cover object-center rounded-full"
-              src="/../img/ayushb.jpg"
+              src="/ayushb.jpg"
               width={400}
               height={400}
             />
