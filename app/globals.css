@@ -29,3 +29,23 @@ nav > .container{
 .bg-grey{
   background-color: #cbd5e1;
 }
+.overlay{
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: #cbd5e1;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+.overlay-btm{
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+  background-color: #cbd5e1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.2;
+}

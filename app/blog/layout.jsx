@@ -12,16 +12,19 @@ export default function BlogLayout({ children }) {
   return (
     <>
       <section className="text-gray-600 body-font overflow-hidden">
+        <div className="overlay fixed"></div>
+        <div className="overlay-btm fixed"></div>
+
         <div className="container px-1 pt-8 pb-0 mx-auto w-full max-w-3xl">
-          <div className="p-8 mx-auto flex flex-wrap">
+          <div className="p-8 mx-auto flex sm:flex-row flex-col justify-between items-start">
             <Image
               alt="author"
-              className="lg:w-1/4 w-full lg:h-auto h-54 object-cover object-center rounded-full"
+              className="w-1/4   h-3/4  object-cover object-center rounded-full  mt-4 mr-8"
               src="/ayushb.jpg"
               width={400}
               height={400}
             />
-            <div className="g:pl-10 lg:pt-4 mt-6 lg:mt-0 ">
+            <div className="g:pl-10 lg:pt-4 mt-6 lg:mt-0 w-3/4">
               <h1 className="text-slate-700 text-xl font-bold  mb-1">
                 <span>Ayush Khatri</span>
               </h1>
@@ -80,20 +83,19 @@ export default function BlogLayout({ children }) {
                 </p>
               </div>
               <p className="leading-relaxed text-slate-500">
-                Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-                sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-                juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-                seitan poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean shorts keytar banjo tattooed umami
-                cardigan.
+                As a Full Stack developer, I possess technical skills in
+                programming languages, databases, and frameworks. I can create
+                visually appealing and highly functional web applications, and I
+                am experienced in working independently or as part of a team. I
+                have a strong eye for detail, a passion for delivering
+                high-quality code, and a commitment to continuous learning and
+                improvement.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="max-w-3xl  py-6 mx-auto">
-        {children}
-      </section>
+      <section className="max-w-3xl  py-6 mx-auto">{children}</section>
     </>
   );
 }

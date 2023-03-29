@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <title>{metadata.title}</title>
+      <title name="author">{metadata.author}</title>
       <body>
         <Navbar />
         <main id='main'>
