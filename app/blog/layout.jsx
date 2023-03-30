@@ -16,7 +16,7 @@ export default function BlogLayout({ children }) {
         <div className="overlay-btm fixed"></div>
 
         <div className="container px-1 pt-8 pb-0 mx-auto w-full max-w-3xl">
-          <div className="p-8 mx-auto flex sm:flex-row flex-col justify-between items-start">
+          <div className="p-8 mx-auto flex sm:flex-row flex-col justify-between items-center">
             <Image
               alt="author"
               className="w-1/4   h-3/4  object-cover object-center rounded-full  mt-4 mr-8"
@@ -25,14 +25,14 @@ export default function BlogLayout({ children }) {
               height={400}
             />
             <div className="g:pl-10 lg:pt-4 mt-6 lg:mt-0 w-3/4">
-              <h1 className="text-slate-700 text-xl font-bold  mb-1">
+              <h2 className="text-slate-700 text-xl font-bold  mb-1 no-underline">
                 <span>Ayush Khatri</span>
-              </h1>
-              <h2 className="text-sm title-font text-slate-500 font-medium no-underline">
-                JavaScript Developer
               </h2>
-              <div className="flex mb-4">
-                <p className="py-2  space-x-4s gap-2 flex">
+              <h3 className="text-sm title-font text-slate-500 font-medium">
+                JavaScript Developer
+              </h3>
+              <div className="flex mb-1 mt-4">
+                <p className="space-x-4s gap-2 flex">
                   <Link
                     className="text-gray-500"
                     href={
@@ -82,14 +82,8 @@ export default function BlogLayout({ children }) {
                   </Link>
                 </p>
               </div>
-              <p className="leading-relaxed text-slate-500">
-                As a Full Stack developer, I possess technical skills in
-                programming languages, databases, and frameworks. I can create
-                visually appealing and highly functional web applications, and I
-                am experienced in working independently or as part of a team. I
-                have a strong eye for detail, a passion for delivering
-                high-quality code, and a commitment to continuous learning and
-                improvement.
+              <p className="leading-relaxed text-slate-500 font-medium mt-1">
+                    #react.js&nbsp;&nbsp;&nbsp;#redux&nbsp;&nbsp;&nbsp;#next.js&nbsp;&nbsp;&nbsp;#node.js
               </p>
             </div>
           </div>

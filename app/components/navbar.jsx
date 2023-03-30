@@ -18,14 +18,14 @@ export default function Navbar() {
     })
   })
   return (
-    <nav className="nav py-6 px-8 bg-navy" id="nav">
-      <div className="flex justify-between container my-0 mx-auto text-slate-300 items-center">
-        <h1 className="text-2xl font-bold">
+    <nav className="nav py-6 px-8 " id="nav">
+      <div className="flex justify-between container my-0 mx-auto text-slate-700 items-center">
+        <h1 className="text-2xl color-navy">
           <span className={marker.className}>
             Portfolio
           </span>
         </h1>
-        <ul className="hidden sm:flex gap-8 text-base font-bold text-slate-300">
+        <ul className="hidden sm:flex gap-8 text- font-bold color-navy">
           <li className="nav-link">
             <Link href={"/"}>Home</Link>
           </li>

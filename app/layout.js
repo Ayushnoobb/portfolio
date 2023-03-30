@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <title name="author">{metadata.author}</title>
       <body>
         <Navbar />
-        <main id='main'>
+        <main id='main' className='font-sans'>
           {children}
         </main>
       </body>

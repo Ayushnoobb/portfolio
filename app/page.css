@@ -97,7 +97,8 @@
   height: 100px;
 }
 .skill > svg > path {
-  fill: #1e2039;
+  fill: #234E70;
+  opacity: 0.95;
 }
 
 .skills:hover > * {
@@ -109,7 +110,7 @@
   filter: blur(0);
 }
 .aside > svg > path {
-  fill:#1e2039;
+  fill:#234E70;
 }
 .aside {
   width: 15%;
@@ -151,6 +152,10 @@
   width: unset;
   height: unset;
 }
+.skill:nth-of-type(6) > svg{
+  width: 50%;
+  height: 50%;
+}
 @media(max-width:768px){
   .triangle-bottom{
     height: 150px;
@@ -159,8 +164,7 @@
     height: 60px;
   }
 }
-
-h2:not(.description > * > * > * > h2){
+h2:not(.description > * > * > * > h2 , .no-underline){
   text-decoration: underline;
 }
 
@@ -174,7 +178,8 @@ h2:not(.description > * > * > * > h2){
 }
 .hexagon{
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background-color: #1e2039;
+  background-color: #234E70;
+  opacity: 0.95;
   width: 50%;
   height: 150px;
   display: flex;
@@ -199,5 +204,8 @@ h2:not(.description > * > * > * > h2){
 .section-blogs-blog{
   display: block;
   transition: 0.3s linear;
+}
+.section-blogs > a{
+  display: block;
 }
 

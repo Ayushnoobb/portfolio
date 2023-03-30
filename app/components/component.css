@@ -1,12 +1,26 @@
 /* navbar */
+/* nav{
+  background-color: #FC766AFF;
+} */
+nav{
+  background-color: #234E70;
+}
 .social-media> a > svg{
   width: 25px;
   height: 25px;
 }
+.color-navy{
+  color: #FFF !important
+}
 .social-media > a > svg > path{
-  fill:#cbd5e1;
+  /* fill:#FFFFD2; */
+  /* fill: #1e2039 */
+  fill: #fff;
   transition: 0.5s ease-in-out;
 }
+/* {
+  background-color: #EED971FF;
+} */
 .social-media > a > svg:hover path{
   fill:#fff
 }
