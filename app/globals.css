@@ -33,7 +33,7 @@ nav > .container{
   width: 50%;
   height: 100%;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  background-color: #DDC3A5;
+  background-color: #dfdfdf;
   top: 0;
   right: 0;
   z-index: -1;
@@ -43,7 +43,7 @@ nav > .container{
   width: 50%;
   height: 100%;
   clip-path: polygon(100% 0, 0% 100%, 0 0);
-  background-color: #DDC3A5;
+  background-color: #dfdfdf;
   top: 0;
   left: 0;
   z-index: -1;
