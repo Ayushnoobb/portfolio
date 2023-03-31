@@ -1,22 +1,13 @@
+// "use client"
 import "./page.css";
 import "./globals.css";
 
-import Link from "next/link";
-
 
 import { Permanent_Marker } from "next/font/google";
+import Blog from "./components/blog";
 const marker = Permanent_Marker({ subsets: ["latin"], weight: "400" });
 
-export default async function Home() {
-  const data = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const res = await data.json();
-
-  let toShowBlogs = [];
-
-  // only 6 blog to display
-  for (let i = 0; i < 6; i++) {
-    toShowBlogs.push(res[i]);
-  }
+export default  function Home() {
   return (
     <>
       <section className="description relative">
@@ -256,28 +247,7 @@ export default async function Home() {
             <span >Blogs</span>
           </h2>
           <div className="section-blogs mx-auto max-w-3xl p-8 grow">
-            {toShowBlogs.map((blog) => {
-              return (
-                <Link href={`/blog/${blog.id}`} key={blog.id} className="pt-4 hover:shadow-lg  blog odd:bg-gray-300 even:bg-slate-300">
-                  <div className="mb-8 border-dotted border-b pb-8 border-gray-300 px-4">
-                    <h2 className="capitalize">
-                      <span className="block">{blog.title}</span>
-                    </h2>
-                    <p className="excerpt text-slate-500 font-medium">
-                      Brief description of the blog
-                    </p>
-
-                    <p className="tag text-slate-500  text-sm">category</p>
-
-                    <span
-                      className="block md:inline md:float-right  created-date text-sm text-slate-500"
-                    >
-                      Blog creation date
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
+            <Blog />
           </div>
         </div>
         <div className="overlay-btm absolute"></div>

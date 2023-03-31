@@ -13,9 +13,10 @@ export default function RootLayout({ children }) {
       <title name="author">{metadata.author}</title>
       <body>
         <Navbar />
-        <main id='main' className='font-sans'>
+
+        <div>
           {children}
-        </main>
+        </div>
       </body>
     </html>
   )
