@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Permanent_Marker } from "next/font/google";
 import Blog from "./components/blog";
+import Button from "./components/button";
 const marker = Permanent_Marker({ subsets: ["latin"], weight: "400" });
 
 export default  function Home() {
@@ -139,11 +140,11 @@ export default  function Home() {
         </div>
         <div className="overlay-btm absolute "></div>
       </section>
-      <section className="my-services relative">
+      <section className="my-services relative ">
         <div className="overlay absolute"></div>
         <div className="container text-slate-600 font-bold py-16">
           <h2 className="text-6xl text-center pt-16">
-            <span >I can develop</span>
+            <span >I can Develop</span>
           </h2>
           <ul className="services grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 p-4 sm:p-16">
             <li className="service flex flex-col">
@@ -239,8 +240,8 @@ export default  function Home() {
         </div>
         <div className="overlay-btm absolute"></div>
       </section>
-      <section className="Project mb-28"></section>
-      <section className="section-blog relative">
+      {/* <section className="Project mb-28"></section> */}
+      <section className="section-blog relative my-24">
         <div className="overlay absolute"></div>
         <div className="container text-slate-600 font-bold py-16">
           <h2 className="section-blog text-6xl text-center py-16">
@@ -248,6 +249,7 @@ export default  function Home() {
           </h2>
           <div className="section-blogs mx-auto max-w-3xl p-8 grow">
             <Blog />
+            <Button name="View more" link="/blog"/>
           </div>
         </div>
         <div className="overlay-btm absolute"></div>
