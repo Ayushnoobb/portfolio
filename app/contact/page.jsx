@@ -1,9 +1,34 @@
+"use client";
 import React from "react";
 import Button from "../components/button";
+import sendEmail from "@/lib/sendEmail";
+
+import useContactForm from "@/lib/contactform";
 
 export default function Contact() {
+  const {values, handleChange} = useContactForm();
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    console.log(values.email)
+    try {
+      const req = await sendEmail(values.email, values.message);
+      if (req.status === 250) {
+        setResponseMessage(
+            {isSuccessful: true, message: 'Thank you for your message.'});
+      }
+    } catch (e) {
+      setResponseMessage({
+        isSuccessful: false,
+        message: 'Oops something went wrong. Please try again.',
+      });
+    }
+    
+    console.log(e.target.name.value)
+
+  }
   return (
-    <section className="py-6  dark:text-gray-800 flex items-center justify-center relative">
+    <section className="py-6  dark:text-gray-800 flex items-center justify-center relative contact">
       <div className="overlay absolute"></div>
       <div className="">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2  py-8 shadow-xl border border-indigo-300">
@@ -56,12 +81,18 @@ export default function Contact() {
           <form
             noValidate=""
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+            onSubmit={handleSubmit}
+            
           >
             <label className="block">
               <span className="mb-1">Full name</span>
               <input
                 type="text"
+                name="name"
+                id="name"
                 placeholder="Write your full name"
+                value={values.name}
+                onChange={handleChange}
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               />
             </label>
@@ -69,7 +100,10 @@ export default function Contact() {
               <span className="mb-1">Email address</span>
               <input
                 type="email"
+                id="email"
                 placeholder="someone@somewhere.com"
+                value={values.email}
+                onChange={handleChange}
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               />
             </label>
@@ -77,14 +111,17 @@ export default function Contact() {
               <span className="mb-1">Message</span>
               <textarea
                 rows="3"
+                id="message"
+                name="message"
+                value={values.message}
+                onChange={handleChange}
                 className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               ></textarea>
             </label>
-            <Button name="submit"></Button>
+            <button className="button" type="submit">Submit</button>
           </form>
         </div>
       </div>
-      <div className="overlay-btm absolute"></div>
     </section>
   );
 }

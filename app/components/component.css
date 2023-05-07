@@ -66,6 +66,12 @@ nav{
   }
 }
 
+@media (max-width:768px) {
+  .nav__wrapper{
+    padding: 0.5rem 0.5rem;
+  }
+}
+
 /*  
 
 button
@@ -175,4 +181,28 @@ footer{
   background-color: transparent;
   opacity: 0.95;
   color: #000;
+}
+
+.animate-ham>svg>rect{
+  transition: all 0.5s ease-in-out ;
+}
+.animate-ham > svg >rect:nth-child(2) {
+  opacity: 0;
+  animation: rotate-svg;
+}
+.animate-ham > svg > rect:nth-child(1){
+  transform: rotate(45deg) translate(4px , -6px);
+  transform-origin: top left;
+}
+.animate-ham > svg > rect:nth-child(3){
+  transform: rotate(320deg) translate(-12px , -2px);
+  /* transform-origin: top right; */
+}
+@keyframes rotate-svg {
+  0%{
+
+  }
+  100%{
+
+  }
 }

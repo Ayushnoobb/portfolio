@@ -13,11 +13,11 @@ export default function Home() {
       <section className="description relative">
         
         <div className="container">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-end  py-16">
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-8 lg:gap-0 justify-end items-center py-0 sm:py-16">
             <div className="image-holder relative md:w-2/4">
               <div className="image absolute "></div>
             </div>
-            <div className="flex flex-col justify-between md:w-2/4 text-slate-600 font-bold pb-28">
+            <div className="flex flex-col justify-between md:w-2/4 text-slate-600 font-bold pb-8 sm:pb-28">
               <h2 className="text-5xl">
                 <span className={marker.className}>
                   <span className="">Hello</span>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         
       </section>
-      <section className="my-skill relative -z-index-90 my-24">
+      <section className="my-skill relative -z-index-90  my-4 sm:my-24">
         
         <div className="aside absolute  top-28 left-4 rotate flex gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -82,7 +82,7 @@ export default function Home() {
           <h2 className="text-6xl text-center pt-16 font-medium">
             <span>Skills</span>
           </h2>
-          <ul className="skills grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-16 m-10 sm:m-32 mb-10 sm:mb-32 text-slate-600">
+          <ul className="skills grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 m-10 sm:m-32 mb-10 sm:mb-32 text-slate-600">
             <li className="skill shadow-lg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <title>HTML5 Logo</title>
@@ -394,7 +394,7 @@ export default function Home() {
           <h2 className="text-6xl text-center pt-16">
             <span>I can Develop</span>
           </h2>
-          <ul className="services grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 p-4 sm:p-16">
+          <ul className="services grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-16">
             <li className="service flex flex-col">
               <div className="hexagon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -489,10 +489,10 @@ export default function Home() {
         
       </section>
       {/* <section className="Project mb-28"></section> */}
-      <section className="section-blog relative my-24">
+      <section className="section-blog relative my-8 sm:my-24">
         
         <div className="container text-slate-600 font-bold py-16">
-          <h2 className="section-blog text-6xl text-center py-16">
+          <h2 className="section-blog text-6xl text-center py-4 sm:py-16">
             <span>Blogs</span>
           </h2>
           <div className="section-blogs mx-auto max-w-3xl p-8 grow">

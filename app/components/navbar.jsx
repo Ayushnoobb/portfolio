@@ -16,15 +16,18 @@ export default function Navbar() {
         document.querySelector(".nav").classList.remove("isfixed");
       }
     });
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+      document.querySelector(".hamburger").classList.toggle("animate-ham")
+    })
   });
   return (
     <nav className="nav" id="nav">
       <div className="relative nav__wrapper">
         <div className="flex justify-between container my-0 mx-auto text-slate-700 items-center relative overflow-hidden">
-          <h1 className="text-2xl text-slate-600">
+          <h1 className="text-md sm:text-2xl text-slate-600">
             <span className={marker.className}>@ayush khatri</span>
           </h1>
-          <ul className="hidden sm:flex gap-8 text-slate-600 font-bold ">
+          <ul className="hidden md:flex gap-2 sm:gap-8 text-slate-600 font-bold ">
             <li className="nav-link">
               <Link href={"/"}>Home</Link>
             </li>
@@ -38,7 +41,7 @@ export default function Navbar() {
               <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
-          <ul className="items-center gap-6 flex justify-center">
+          <ul className="items-center gap-1 sm:gap-6 flex justify-center">
             <li className="social-media">
               <Link
                 href={"https://www.facebook.com/profile.php?id=100074470688895"}
@@ -61,7 +64,7 @@ export default function Navbar() {
             </li>
             <li className="social-media">
               <Link
-                href={"https://www.instagram.com/ayushthegreatt/"}
+                href={"https://www.instagram.com/developedby__ayush/"}
                 target={"_blank"}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -77,6 +80,13 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
+          <button className="hamburger block md:hidden">
+            <svg width={50} height={30}>
+              <rect width={35} height={5} y={0} rx={4} ry={4} fill="#475569"></rect>
+              <rect width={35} height={5} rx={4} y={10}ry={4} fill="#475569"></rect>
+              <rect width={35} height={5} y={20} rx={4} ry={4} fill="#475569"></rect>
+            </svg>
+          </button>
         </div>
         <div className="blurr"></div>
       </div>
