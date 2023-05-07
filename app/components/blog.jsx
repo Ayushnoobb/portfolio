@@ -18,7 +18,7 @@ export default async function Blog() {
           <Link
             href={`/blog/${blog.id}`}
             key={blog.id}
-            className="pt-4 hover:shadow-lg shadow  blog odd:bg-gray-300 even:bg-slate-300"
+            className="pt-4 hover:shadow-3xl shadow-lg block  blog odd:bg-gray-300 even:bg-slate-300"
           >
             <div className="mb-8 border-dotted border-b pb-8 border-gray-300 px-4">
               <h2 className="capitalize">

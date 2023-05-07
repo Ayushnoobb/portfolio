@@ -1,14 +1,25 @@
 // "use client"
+import getPosts from '@/lib/post'
 import React from 'react'
+import md from "markdown-it";
 
 export default async function Blog({params}) {
   const {id} = params
-  const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-  const res = await data.json()
+  
+
+
+  const blogs = await getPosts();
+
   return (
     <div className='container'>
       {
-        res.title
+        blogs.map(blog => {
+          if(id == blog.id){
+            return(
+              <div dangerouslySetInnerHTML={{ __html: md().render(blog.content) }} />
+            )
+          }
+        })
       }
     </div>
   )

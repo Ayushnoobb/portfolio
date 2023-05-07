@@ -11,9 +11,7 @@ export const metadata = {
 export default function BlogLayout({ children }) {
   return (
     <>
-      <div className="text-gray-600 body-font overflow-hidden">
-        <div className="overlay fixed"></div>
-        <div className="overlay-btm fixed"></div>
+      <div className="text-gray-600 body-font overflow-hidden min-h-300vh">
 
         <div className="container px-1 pt-8 pb-0 mx-auto w-full max-w-3xl">
           <div className="p-8 mx-auto flex sm:flex-row flex-col justify-between items-center">
@@ -89,7 +87,7 @@ export default function BlogLayout({ children }) {
           </div>
         </div>
       </div>
-      <section className="max-w-3xl  py-6 mx-auto">{children}</section>
+      <section className="max-w-3xl  py-6 mx-auto prose ">{children}</section>
     </>
   );
 }

@@ -13,6 +13,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: scroll;
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
 }
 .color-navy{
   color: #1e2039;
@@ -35,7 +37,7 @@ nav > .container{
 .bg-grey{
   background-color: #cbd5e1;
 }
-.overlay{
+/* .overlay{
   width: 50%;
   height: 100%;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -52,7 +54,7 @@ nav > .container{
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
 .not-found > .overlay{
   z-index: unset;
@@ -61,6 +63,20 @@ nav > .container{
   z-index: unset;
 }
 
-section{
-  min-height: calc(100vh - 162px);
+section:not(.about){
+  min-height: 100dvh;
+  /* mix-blend-mode: difference; */
+}
+.mixed-blend-difference:not(span.wave){
+  mix-blend-mode: difference;
+}
+.linear-scroll{
+  /* background : linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  /* background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+}
+
+.capitalize{
+  margin-top: 0px !important;
+  margin-bottom: .5rem;
 }

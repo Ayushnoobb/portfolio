@@ -8,9 +8,9 @@ export default function Contact() {
       <div className="">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2  py-8 shadow-xl border border-indigo-300">
           <div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-4xl font-bold">Get in touch</h1>
-            <p className="pt-2 pb-4">
-              Fill in the form to start a conversation
+            <h1 className="text-4xl font-bold text-indigo-500">Get in touch</h1>
+            <p className="pt-2 pb-4 text-indigo-500">
+              Fill form to start a conversation with ayush
             </p>
             <div className="space-y-4">
               <p className="flex items-center">
@@ -54,7 +54,7 @@ export default function Contact() {
             </div>
           </div>
           <form
-            novalidate=""
+            noValidate=""
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
           >
             <label className="block">

@@ -55,6 +55,7 @@
   display: inline-block;
   transition: 2s;
   transform-origin: bottom right;
+  /* mix-blend-mode: unset !important; */
 }
 @keyframes wave {
   0% {

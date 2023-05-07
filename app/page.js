@@ -2,13 +2,12 @@
 import "./page.css";
 import "./globals.css";
 
-
 import { Permanent_Marker } from "next/font/google";
 import Blog from "./components/blog";
 import Button from "./components/button";
 const marker = Permanent_Marker({ subsets: ["latin"], weight: "400" });
 
-export default  function Home() {
+export default function Home() {
   return (
     <>
       <section className="description relative">
@@ -21,25 +20,43 @@ export default  function Home() {
             <div className="flex flex-col justify-between md:w-2/4 text-slate-600 font-bold pb-28">
               <h2 className="text-5xl">
                 <span className={marker.className}>
-                  Hello<span className="wave">👋</span>
+                  <span className="">Hello</span><span className="wave ">👋</span>
                   <br />
-                  <span className="block ">I am Ayush !</span>
+                  <span className="">I am Ayush !</span>
                 </span>
               </h2>
               <h3 className="mt-6 font-bold text-xl">
                 I am a Full Stack JavaScript Developer
               </h3>
               <p className="font-medium text-base py-2">
-              As a Full Stack developer, I have a deep understanding of both frontend and backend web development. I possess a range of technical skills, including proficiency in programming languages such as HTML, CSS, JavaScript and database like MongoDB. I am also experienced in various frameworks and libraries like React , Next.js, Node.js to name a few.
+                As a Full Stack developer, I have a deep understanding of both
+                frontend and backend web development. I possess a range of
+                technical skills, including proficiency in programming languages
+                such as HTML, CSS, JavaScript and database like MongoDB. I am
+                also experienced in various frameworks and libraries like React
+                , Next.js, Node.js to name a few.
               </p>
               <p className="font-medium text-base py-2">
-              My work as a Full Stack developer has enabled me to create complex web applications that are both visually appealing and highly functional. From designing user interfaces to writing server-side code, handling databases, and deploying applications, I have the ability to take on every aspect of the development process.
+                My work as a Full Stack developer has enabled me to create
+                complex web applications that are both visually appealing and
+                highly functional. From designing user interfaces to writing
+                server-side code, handling databases, and deploying
+                applications, I have the ability to take on every aspect of the
+                development process.
               </p>
               <p className="font-medium text-base py-2">
-              I have a strong eye for detail and a passion for delivering high-quality, efficient code. I am also experienced in working independently or as part of a team, and I understand the importance of effective communication and collaboration in achieving project goals.
+                I have a strong eye for detail and a passion for delivering
+                high-quality, efficient code. I am also experienced in working
+                independently or as part of a team, and I understand the
+                importance of effective communication and collaboration in
+                achieving project goals.
               </p>
               <p className="font-medium text-base py-2">
-              As a Full Stack developer, I am always looking for ways to expand my knowledge and stay up-to-date with the latest trends and technologies in the field. I am committed to continuous learning and improvement, and I strive to provide innovative solutions that meet the needs of my clients and users.
+                As a Full Stack developer, I am always looking for ways to
+                expand my knowledge and stay up-to-date with the latest trends
+                and technologies in the field. I am committed to continuous
+                learning and improvement, and I strive to provide innovative
+                solutions that meet the needs of my clients and users.
               </p>
             </div>
           </div>
@@ -62,7 +79,7 @@ export default  function Home() {
         </div>
         <div className="container text-slate-600 font-bold py-16">
           <h2 className="text-6xl text-center pt-16 font-medium">
-            <span >Skills</span>
+            <span>Skills</span>
           </h2>
           <ul className="skills grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-16 m-10 sm:m-32 mb-10 sm:mb-32 text-slate-600">
             <li className="skill shadow-lg">
@@ -144,7 +161,7 @@ export default  function Home() {
         <div className="overlay absolute"></div>
         <div className="container text-slate-600 font-bold py-16">
           <h2 className="text-6xl text-center pt-16">
-            <span >I can Develop</span>
+            <span>I can Develop</span>
           </h2>
           <ul className="services grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 p-4 sm:p-16">
             <li className="service flex flex-col">
@@ -245,11 +262,11 @@ export default  function Home() {
         <div className="overlay absolute"></div>
         <div className="container text-slate-600 font-bold py-16">
           <h2 className="section-blog text-6xl text-center py-16">
-            <span >Blogs</span>
+            <span>Blogs</span>
           </h2>
           <div className="section-blogs mx-auto max-w-3xl p-8 grow">
             <Blog />
-            <Button name="View more" link="/blog"/>
+            <Button name="View more" link="/blog" />
           </div>
         </div>
         <div className="overlay-btm absolute"></div>
