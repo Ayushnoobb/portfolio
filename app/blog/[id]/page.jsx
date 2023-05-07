@@ -16,7 +16,7 @@ export default async function Blog({params}) {
         blogs.map(blog => {
           if(id == blog.id){
             return(
-              <div dangerouslySetInnerHTML={{ __html: md().render(blog.content) }} />
+              <div dangerouslySetInnerHTML={{ __html: md().render(blog.content) }} key={blog.id}/>
             )
           }
         })
