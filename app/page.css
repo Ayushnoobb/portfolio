@@ -121,7 +121,7 @@
   height: 100px;
 }
 .skill > svg > path {
-  fill: #234E70;
+  /* fill: #234E70; */
   opacity: 0.95;
 }
 
@@ -225,11 +225,36 @@ h2:not(.description > * > * > * > h2 , .no-underline){
 
 /* Blog */
 
+.section-blogs{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .section-blogs-blog{
   display: block;
   transition: 0.3s linear;
 }
 .section-blogs > a{
   display: block;
+  position: relative;
+  z-index: 3;
+
 }
+.section-blogs .blog , .blog{
+  border : 5px solid;
+  display: block;
+  border-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)20;
+
+}
+
+#css > * >path {
+  fill: #fff;
+}
+
+/* .blog > div{
+  position: absolute;
+  inset: 0;
+  min-height: 200px;
+} */
 

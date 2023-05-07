@@ -1,6 +1,13 @@
 .blog{
   display: block;
+  position: relative;
 }
 .blog > * {
   text-decoration: none !important;
+}
+.blog::after{
+  position: absolute;
+  content: '';
+  inset: 0;
+  transform: scale(1.3);
 }

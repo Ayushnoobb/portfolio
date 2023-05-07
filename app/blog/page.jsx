@@ -20,7 +20,7 @@ export default async function Blog(){
           // {console.log(blog.content)}
           return(
           <>
-            <Link key={blog.id} className="pt-4 hover:shadow-xl shadow-lg  blog odd:bg-gray-300 even:bg-slate-300" href={`/blog/${blog.id}`}>
+            <Link key={blog.id} className="pt-4 hover:shadow-xl shadow-lg  blog odd:bg-gray-300 even:bg-slate-300 " href={`/blog/${blog.id}`}>
               <div className="mb-8 border-dotted border-b pb-8 border-gray-300 px-4">
                 <h2 className="capitalize">
                   <span className="block">{blog.title}</span>
