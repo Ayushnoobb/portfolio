@@ -17,7 +17,8 @@ export default function Navbar() {
       }
     });
     document.querySelector(".hamburger").addEventListener("click",()=>{
-      document.querySelector(".hamburger").classList.toggle("animate-ham")
+      document.querySelector(".hamburger").classList.toggle("animate-ham");
+      document.querySelector(".nav__links-sp").classList.toggle("open");
     })
   });
   return (
@@ -88,7 +89,20 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <div className="blurr"></div>
+        <ul className="nav__links-sp absolute">
+            <li className="nav-link">
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li className="nav-link">
+              <Link href={"/about"}>About Me</Link>
+            </li>
+            <li className="nav-link">
+              <Link href={"/blog"}>Blogs</Link>
+            </li>
+            <li className="nav-link">
+              <Link href={"/contact"}>Contact</Link>
+            </li>
+        </ul>
       </div>
     </nav>
   );

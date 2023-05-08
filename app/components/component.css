@@ -5,6 +5,33 @@ nav{
   /* background-color: #3e54ac; */
   background-color: transparent;
 }
+
+.nav__links-sp{
+  background-color: #f8b500;
+  z-index: 25;
+  width: 0;
+  opacity: 0;
+  left: 0;
+  height: 50dvh;
+  display: none;
+  transition: 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__links-sp  > .nav-link{
+  width: fit-content;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.open{
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+}
+
 .social-media> a > svg{
   width: 25px;
   height: 25px;
@@ -69,6 +96,20 @@ nav{
 @media (max-width:768px) {
   .nav__wrapper{
     padding: 0.5rem 0.5rem;
+  }
+}
+
+/* ham */
+
+rect{
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width:768px) {
+  .nav__links-sp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 

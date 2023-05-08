@@ -87,7 +87,7 @@ export default function BlogLayout({ children }) {
           </div>
         </div>
       </div>
-      <section className="max-w-3xl  py-6 mx-auto prose flex flex-col gap-8 ">{children}</section>
+      <section className="max-w-3xl  px-8 sm:px-0 py-6 mx-auto prose flex flex-col gap-8 ">{children}</section>
     </>
   );
 }
