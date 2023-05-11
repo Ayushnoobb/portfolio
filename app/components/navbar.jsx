@@ -16,10 +16,19 @@ export default function Navbar() {
         document.querySelector(".nav").classList.remove("isfixed");
       }
     });
-    document.querySelector(".hamburger").addEventListener("click",()=>{
-      document.querySelector(".hamburger").classList.toggle("animate-ham");
+
+    let hamburger = document.querySelector(".hamburger")
+
+    function handleClick() {
+      hamburger.classList.toggle("animate-ham");
       document.querySelector(".nav__links-sp").classList.toggle("open");
-    })
+    }
+
+    hamburger.addEventListener("click", handleClick);
+
+    return () => {
+      hamburger.removeEventListener("click" , handleClick);
+    };
   });
   return (
     <nav className="nav" id="nav">
@@ -82,26 +91,47 @@ export default function Navbar() {
             </li>
           </ul>
           <button className="hamburger block md:hidden">
-            <svg width={50} height={30}>
-              <rect width={35} height={5} y={0} rx={4} ry={4} fill="#475569"></rect>
-              <rect width={35} height={5} rx={4} y={10}ry={4} fill="#475569"></rect>
-              <rect width={35} height={5} y={20} rx={4} ry={4} fill="#475569"></rect>
+            <svg width={50} height={30} className="hamburgernpm">
+              <rect
+                width={35}
+                height={5}
+                y={0}
+                rx={4}
+                ry={4}
+                fill="#475569"
+              ></rect>
+              <rect
+                width={35}
+                height={5}
+                rx={4}
+                y={10}
+                ry={4}
+                fill="#475569"
+              ></rect>
+              <rect
+                width={35}
+                height={5}
+                y={20}
+                rx={4}
+                ry={4}
+                fill="#475569"
+              ></rect>
             </svg>
           </button>
         </div>
         <ul className="nav__links-sp absolute">
-            <li className="nav-link">
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li className="nav-link">
-              <Link href={"/about"}>About Me</Link>
-            </li>
-            <li className="nav-link">
-              <Link href={"/blog"}>Blogs</Link>
-            </li>
-            <li className="nav-link">
-              <Link href={"/contact"}>Contact</Link>
-            </li>
+          <li className="nav-link">
+            <Link href={"/"}>Home</Link>
+          </li>
+          <li className="nav-link">
+            <Link href={"/about"}>About Me</Link>
+          </li>
+          <li className="nav-link">
+            <Link href={"/blog"}>Blogs</Link>
+          </li>
+          <li className="nav-link">
+            <Link href={"/contact"}>Contact</Link>
+          </li>
         </ul>
       </div>
     </nav>

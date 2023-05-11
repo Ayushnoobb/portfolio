@@ -12,7 +12,6 @@ export default function BlogLayout({ children }) {
   return (
     <>
       <div className="text-gray-600 body-font overflow-hidden min-h-300vh">
-
         <div className="container px-1 pt-8 pb-0 mx-auto w-full max-w-3xl">
           <div className="p-8 mx-auto flex sm:flex-row flex-col justify-between items-center">
             <Image
@@ -87,6 +86,7 @@ export default function BlogLayout({ children }) {
           </div>
         </div>
       </div>
+      
       <section className="max-w-3xl  px-8 sm:px-0 py-6 mx-auto prose flex flex-col gap-8 ">{children}</section>
     </>
   );
