@@ -30,6 +30,7 @@ export default function Navbar() {
       hamburger.removeEventListener("click" , handleClick);
     };
   });
+  
   return (
     <nav className="nav" id="nav">
       <div className="relative nav__wrapper">
