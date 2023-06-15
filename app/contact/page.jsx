@@ -1,30 +1,36 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/button";
-import sendEmail from "@/lib/sendEmail";
+// import sendEmail from "@/lib/sendEmail";
+// import setRes
 
-import useContactForm from "@/lib/contactform";
+// import useContactForm from "@/lib/contactform";
 
 export default function Contact() {
-  const {values, handleChange} = useContactForm();
+
+  const [name , setName] = useState("");
+  const [email , setEmail] = useState("");
+  const [message , setMessage] = useState("");
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log(values.email)
-    try {
-      const req = await sendEmail(values.email, values.message);
-      if (req.status === 250) {
-        setResponseMessage(
-            {isSuccessful: true, message: 'Thank you for your message.'});
-      }
-    } catch (e) {
-      setResponseMessage({
-        isSuccessful: false,
-        message: 'Oops something went wrong. Please try again.',
-      });
+    const mail = {
+      name : name ,
+      email : email ,
+      message : message  
     }
+    console.log(name)
+    fetch('/api/mail', {
+      method:'POST',
+      body: JSON.stringify({"name":`${name}`,"email":`${email}`,"message":`${message}`}),
+      headers : {
+        'Content-Type': 'application/json',
+      }
+    }).then(res => {
+      console.log("reponse:", res);
+    })
     
-    console.log(e.target.name.value)
+    // console.log(e.target.name.value)
 
   }
   return (
@@ -91,8 +97,9 @@ export default function Contact() {
                 name="name"
                 id="name"
                 placeholder="Write your full name"
-                value={values.name}
-                onChange={handleChange}
+                onChange={(e)=>{
+                    setName(e.target.value)
+                }}
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               />
             </label>
@@ -102,8 +109,9 @@ export default function Contact() {
                 type="email"
                 id="email"
                 placeholder="someone@somewhere.com"
-                value={values.email}
-                onChange={handleChange}
+                onChange={(e)=>{
+                    setEmail(e.target.value)
+                }}
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               />
             </label>
@@ -113,8 +121,9 @@ export default function Contact() {
                 rows="3"
                 id="message"
                 name="message"
-                value={values.message}
-                onChange={handleChange}
+                onChange={(e)=>{
+                    setMessage(e.target.value)
+                }}
                 className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-indigo-200 dark:bg-gray-100 px-1 border border-indigo-300"
               ></textarea>
             </label>

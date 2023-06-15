@@ -2,41 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  margin: 0 ;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  min-height: 100vh;
+body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  /* background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500); */
+  background-image: linear-gradient(
+    to bottom,
+    #b4b2b3,
+    #b4b2b3 70%,
+    #b4b2b3 71%,
+    #ededed
+  );
 }
-.color-navy{
+.color-navy {
   color: #1e2039;
 }
-.bg-navy{
+.bg-navy {
   background-color: #1e2039;
 }
-.container{
+.container {
   margin: 0 auto;
   overflow-x: hidden;
 }
-nav > .container{
+nav > .container {
   overflow: unset;
 }
-@media (max-width:768px){
-  .container{
-    padding:0 10px !important ;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px !important ;
   }
 }
-.bg-grey{
+.bg-grey {
   background-color: #cbd5e1;
+}
+.absolute {
+  position: absolute;
 }
 /* .overlay{
   width: 50%;
@@ -57,33 +66,33 @@ nav > .container{
   z-index: -1;
 } */
 
-.not-found > .overlay{
+.not-found > .overlay {
   z-index: unset;
 }
-.not-found >.overlay-btm{
+.not-found > .overlay-btm {
   z-index: unset;
 }
 
-section:not(.about, .contact){
-  min-height: 100dvh;
-  /* mix-blend-mode: difference; */
-}
-.mixed-blend-difference:not(span.wave){
+.mixed-blend-difference:not(span.wave) {
   mix-blend-mode: difference;
 }
-.linear-scroll{
+.linear-scroll {
   /* background : linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   /* background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 
-.capitalize{
+.capitalize {
   margin-top: 0px !important;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width:768px) {
-  section:not(.about, .contact){
+@media (max-width: 768px) {
+  section:not(.about, .contact) {
     min-height: unset;
   }
 }
