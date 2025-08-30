@@ -29,7 +29,7 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl text-primary">Portfolio</div>
+          <div className="font-bold text-xl text-primary">@Ayush Khatri</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

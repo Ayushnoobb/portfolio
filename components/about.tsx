@@ -8,7 +8,7 @@ export function About() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Passionate software engineer with 5+ years of experience building modern web applications
+            Passionate software engineer with 3+ years of experience building modern web applications
           </p>
         </div>
 
@@ -43,13 +43,13 @@ export function About() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8">
               <img
-                src="/software-engineer-portrait.png"
-                alt="Alex Johnson - Software Engineer"
+                src="/ayush-khatri.jpg"
+                alt="Ayush Khatri - Software Engineer"
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold">5+</div>
+              <div className="text-2xl font-bold">3+</div>
               <div className="text-sm">Years Experience</div>
             </div>
           </div>

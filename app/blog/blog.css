@@ -1,7 +1,0 @@
-.blog{
-  display: block;
-  position: relative;
-}
-.blog > * {
-  text-decoration: none !important;
-}
