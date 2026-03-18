@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Database, Globe, Smartphone } from "lucide-react"
+import { Code, Database, Globe, Smartphone, Brain } from "lucide-react"
 
 export function Skills() {
   const skillCategories = [
@@ -23,9 +23,15 @@ export function Skills() {
       color: "text-purple-600",
     },
     {
+      title: "AI & Machine Learning",
+      icon: Brain,
+      skills: ["OpenAI API", "LangChain", "TensorFlow", "PyTorch", "Hugging Face", "Prompt Engineering", "RAG", "Vector DBs"],
+      color: "text-pink-600",
+    },
+    {
       title: "Mobile & Tools",
       icon: Smartphone,
-      skills: ["React Native", "Git", "Jest", "Cypress", "Figma", "Linux", "Agile"],
+      skills: ["React Native", "Git", "Jest", "Cypress", "Figma", "Linux"],
       color: "text-orange-600",
     },
   ]

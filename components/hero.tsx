@@ -34,14 +34,14 @@ export function Hero() {
                             <span className="text-primary">Ayush Khatri</span>
                         </h1>
                         <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-light">
-                            Software Engineer & Full-Stack Developer
+                            Software Engineer, Full-Stack Developer & AI Enthusiast
                         </h2>
                     </div>
 
                     <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
                         I craft digital experiences through clean code and
                         innovative solutions. Passionate about building scalable
-                        applications that make a difference.
+                        applications and AI-powered products that make a real difference.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

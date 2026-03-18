@@ -10,7 +10,7 @@ export function About() {
                         About Me
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-                        Passionate software engineer with 3+ years of experience
+                        Passionate software engineer with 5+ years of experience
                         building modern web applications
                     </p>
                 </div>
@@ -62,13 +62,13 @@ export function About() {
                     <div className="relative">
                         <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8">
                             <img
-                                src="/ayush-profile.jpg"
+                                src="/ayush-khatri.png"
                                 alt="Ayush Khatri - Software Engineer"
                                 className="w-full h-full object-cover rounded-xl object-top"
                             />
                         </div>
                         <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
-                            <div className="text-2xl font-bold">3+</div>
+                            <div className="text-2xl font-bold">5+</div>
                             <div className="text-sm">Years Experience</div>
                         </div>
                     </div>
